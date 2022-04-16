@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="../static/custom.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <nav class="navbar navbar-expand-lg bg-white">
+            <a class="navbar-brand" href="index.html">
+                <img src="../Images/Weatherly-logo-purple.png" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" 
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="temp.html">Temp</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparisons.html">Comparisons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+    <body class="body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="box bg-white">
+                        <p class="h1"> Latitude vs Humidity</h1>
+                        <hr class="light">
+                        <img src="../Images/humidity.png" class="img-fluid" alt="Windiness vs Latitude">
+                        <p>While cloudiness does vary across latitude, it does not do so with much correlation. There is a slight increase in cloud cover at the highest and lowest latitudes. This leaves the equator with relatively lower cloud cover. This aligns with the geographical insidences of many of the worlds dry desserts.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="box bg-white">
+                        <p class="h2">Visualizations</h1>
+                        <hr class="light">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="title">Latitude vs Temperature</h1>
+                                    <a href="temp.html">
+                                        <img src="../Images/temp.png" class="img-fluid shadow" alt="Temperature vs Latitude">
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="title">Latitude vs Cloudiness</h1>
+                                    <a href="cloudiness.html">
+                                        <img src="../Images/cloudiness.png" class="img-fluid shadow"  alt="Cloudiness vs Latitude">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="title">Latitude vs Windiness</h1>
+                                    <a href="wind.html">
+                                        <img src="../Images/wind.png" class="img-fluid shadow" alt="Windiness vs Latitude">
+                                    </a>
+                                </div>
+                                <div class="col-6 border-info bg-light">
+                                    <h5 class="title">Latitude vs Humidity</h1>
+                                    <a href="humidity.html">
+                                        <img src="../Images/humidity.png" class="img-fluid shadow"  alt="Humidity vs Latitude">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

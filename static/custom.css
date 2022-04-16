@@ -1,0 +1,31 @@
+.h2 {
+    color: #6356e5
+}
+.h1 {
+    color: #6356e5
+}
+
+.box {
+    margin-top: 32px;
+    padding: 20px;
+}
+
+.body {
+    background-color: rgba(204, 204, 204, 0.733);
+}
+
+.nav-link {
+    color: #6356e5;
+}
+
+.title {
+    color: #6356e5;
+    width: 100%;
+}
+
+.table-responsive {
+    overflow-x:auto;
+    overflow-y:auto;
+    max-height:auto;
+    max-width: auto;
+}
